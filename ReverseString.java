@@ -1,6 +1,15 @@
+import java.util.Scanner;
+
 public class ReverseString {
     public static void main(String[] args) {
-        String newString = reverseString("Patrick");
+       
+        System.out.println("please enter your name:");
+
+        Scanner scan = new Scanner(System.in); 
+
+        String name = scan.nextLine();
+
+        String newString = reverseString(name);
 
         System.out.println("\n\n" + newString);
     }
@@ -8,7 +17,7 @@ public class ReverseString {
     public static String reverseString(String anyString) {
         String reversedString = "";
 
-        // get lenght 
+        // get length 
         int anyStringLen = anyString.length();
 
         // use a for loop to reverse a string 
